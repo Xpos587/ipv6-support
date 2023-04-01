@@ -13,5 +13,4 @@ public class AccessKeyBackendApplication {
     public static void main(String[] args) {
         SpringApplication.run(AccessKeyBackendApplication.class, args);
     }
-
 }

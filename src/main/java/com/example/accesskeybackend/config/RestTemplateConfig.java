@@ -12,8 +12,7 @@ public class RestTemplateConfig {
     public RestTemplate restTemplate(final RestTemplateBuilder builder, final AccessKeyProviderProps props) {
         return builder
                 .rootUri(props.getRootUri())
-                .basicAuthentication(props.getAuthUser(), props.getAuthPwd())
-                .defaultHeader("user-agent","replaced")
+                .defaultHeader("user-agent", "replaced")
                 .build();
     }
 }
